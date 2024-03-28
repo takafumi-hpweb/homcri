@@ -1,0 +1,373 @@
+/***********　ヘッダーレイアウト　**********/
+.head-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.left,
+.center,
+.right {
+    flex: 1;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.center img{
+    max-height: 110px;
+    max-width: 150%;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title,
+.wrapper-item2 {
+    margin: 0 10px;
+    /* タイトルとお問い合わせリンクの両端にマージンを追加 */
+}
+
+
+/**********　ヘッダーナヴィゲーション　レイアウト　**********/
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* 中央寄せ */
+    align-items: center;
+    /* アイテムを垂直方向の中央に配置 */
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    /* 必要に応じて調整 */
+}
+
+nav a:hover {
+    color: white;
+    /* ホバー時の背景色 */
+}
+
+nav li {
+    position: relative;
+    /* 線を追加するため */
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav li:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 25%;
+    /* 縦線の上部を途切れさせる */
+    bottom: 25%;
+    /* 縦線の下部を途切れさせる */
+    width: 1px;
+    background-color: #000;
+    /* 線の色 */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    /* リンクの色、必要に応じて調整 */
+    padding: 0 15px;
+    /* リンクの間隔、必要に応じて調整 */
+    transition: 0.2s;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    /* リストマーカーを非表示に */
+    padding: 0;
+    /* デフォルトのパディングを削除 */
+    margin: 0;
+    /* デフォルトのマージンを削除 */
+}
+
+header nav ul li {
+    margin: 0 20px;
+    /* アイテム間の等間隔を調整 */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    /* アンダーラインを非表示に */
+    color: #333;
+    /* テキスト色、必要に応じて調整してください */
+    font-size: 16px;
+    /* フォントサイズ、必要に応じて調整してください */
+}
+
+/**********　ファーストビュー　レイアウト　**********/
+.top-wrapper {
+    background-size: cover;
+    width: 100%;
+}
+
+.centered-image1 {
+    background-size: cover;
+    position: relative;
+}
+
+.top-wrapper img {
+    position: relative;
+    left: 30%;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.top-wrapper h1 {
+    position: absolute;
+    top: 30%;
+    right: 65%;
+    font-size: 5vw;
+    color: black;
+   
+}
+
+.top-wrapper span {
+    display: block;
+    text-align: center;
+}
+
+.top-wrapper p {
+    position: absolute;
+    top: 60%;
+    left: 4.5%;
+    font-size: 1.5vw;
+    color: black;
+}
+
+/**********　こんな事思ったことありませんか　レイアウト　**********/
+.main-logo1 {
+    height: 1200px;
+    background-color: white;
+    color: black;
+
+}
+
+.centered-image {
+    text-align: center;
+    /* コンテナのテキスト揃えを中央に */
+}
+
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+}
+
+/**********　他とここが違う　レイアウト　**********/
+.main-logo2 {
+    background-color: gray;
+    background-image: url(https://lh3.googleusercontent.com/pw/AP1GczNNF_OvLeYEi183Rpq4mvqHeQnGyOSenM0BDz_v3hEalPp3AdE-u_L7cAPWxuRKXW-MR0xSFdIbPQ2IFq9Y7Ix_psqzDkBBtoILqEy9gnt6X7ryyVyOU7Kv01kuCi_7HU_N63eb0bSrF7Pxc7xkXvT5jw=w1366-h974-s-no-gm?authuser=0);
+    background-size: cover;
+    height: 600px;
+    color: black;
+}
+
+.main-logo2 span {
+    color: red;
+    font-size: 50px;
+}
+
+/**********　ホームページのサンプル　レイアウト　**********/
+.main-logo3 {
+    background-color: white;
+    height: 400px;
+    color: black;
+}
+
+.box1 {
+    border: 2px solid#000;
+    padding: 90px 90px;
+    margin: 0 10px;
+    height: 50px;
+    text-align: center;
+}
+
+.sample-image {
+    display: flex;
+}
+
+/**********　メニューとご利用料金目安　レイアウト　**********/
+.main-logo4 {
+    height: 2500px;
+    background-color: white;
+    color: black;
+}
+
+.main-logo4 p {
+    font-size: 20px;
+}
+
+.main-logo4 p span {
+    color: red;
+}
+
+/**********　表　レイアウト　**********/
+
+.table1 {
+    color: black;
+    border: 3px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table1 th,
+.table1 td {
+    border: 3px solid black;
+}
+
+.table1 th {
+    padding: 20px 10px;
+}
+
+.table1 td {
+    padding: 40px 10px;
+}
+
+.table2 {
+    color: black;
+    border: 3px solid black;
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table2 th,
+.table2 td {
+    border: 3px dashed black;
+}
+
+.table2 td {
+    padding: 300px 10px;
+}
+
+.table2 th {
+    padding: 20px 10px;
+}
+
+/**********　お申込みから完成までの流れ　レイアウト　**********/
+.main-logo5 {
+    background-color: #EEEEEE;
+    color: black;
+}
+
+.container6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box4 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: black;
+    /*文字色*/
+    background: white;
+    border: solid 3px black;
+    /*線*/
+    border-radius: 15px;
+    /*角の丸み*/
+    text-align: center;
+    width: 400px;
+    font-size: 25px;
+}
+
+.box4 p {
+    margin: 0;
+    padding: 0;
+}
+
+.item1 {
+    font-size: 50px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+}
+
+/**********　よくある質問　レイアウト　**********/
+.main-logo6 {
+    height: 1200px;
+    background-color: white;
+    color: black;
+}
+
+.question {
+    border: 2px solid#000;
+    padding: 20px 300px 20px 10px;
+    background-color: #AAAAAA;
+}
+
+.question span {
+    color: red;
+
+    font-size: 30px;
+}
+
+.answer span {
+    color: red;
+    font-size: 30px;
+}
+
+.box3 {
+    border: 4px solid yellow;
+    padding: 10px;
+    margin: 0 580px;
+}
+
+/**********　フッター　レイアウト　**********/
+.footer {
+    color: white;
+    background-color: gray;
+    height: 200px;
+    display: flex;
+}
+
+.footer p {
+    font-size: 1.2vw;
+}
+
+.footer li {
+    font-size: 0.8vw;
+}
+
+.container1 {
+    padding-left: 50px;
+}
+
+.container2 {
+    padding-left: 80px;
+}
+
+.container3 {
+    padding-left: 110px;
+}

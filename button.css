@@ -1,0 +1,137 @@
+/**********　ハンバーガーボタン　**********/
+.hamburger {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #333;
+}
+
+.hamburger:hover span {
+    background-color: #666;
+}
+
+/**********　無料見積もり　ボタン　**********/
+.container4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130px;
+}
+
+.question-button {
+    background-color: #0bdd;
+    /* ボタンの背景色 */
+    color: black;
+    /* ボタンのテキスト色 */
+    border: solid 3px black;
+    /* ボーダーをなしにする */
+    padding: 10px 20px;
+    /* パディング */
+    border-radius: 10px;
+    /* 角丸 */
+    cursor: pointer;
+    /* カーソルをポインターにする */
+    width: 450px;
+    font-size: 50px;
+}
+.question-button:hover {
+    background-color: #0056b3;
+    /* ホバー時の背景色 */
+}
+
+/**********　お問い合わせ　ボタン　**********/
+.container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.mail-box {
+    background-color: #0bdd;
+    /* ボタンの背景色 */
+    color: black;
+    /* ボタンのテキスト色 */
+    border: solid 3px black;
+    /* ボーダーをなしにする */
+    padding: 10px 20px;
+    /* パディング */
+    border-radius: 10px;
+    /* 角丸 */
+    cursor: pointer;
+    /* カーソルをポインターにする */
+    width: 450px;
+    font-size: 30px;
+}
+.mail-box:hover {
+    background-color: #0056b3;
+    /* ホバー時の背景色 */
+}
+
+/**********　お申込み　ボタン　**********/
+.container7 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    height: 300px;
+}
+
+.subscription {
+    background-color: #0bdd;
+    /* ボタンの背景色 */
+    color: black;
+    /* ボタンのテキスト色 */
+    border: solid 3px black;
+    /* ボーダーをなしにする */
+    padding: 10px 20px;
+    /* パディング */
+    border-radius: 10px;
+    /* 角丸 */
+    cursor: pointer;
+    /* カーソルをポインターにする */
+    width: 430px;
+    font-size: 30px;
+}
+.subscription:hover {
+    background-color: #0056b3;
+    /* ホバー時の背景色 */
+}
+
+/**********　その他質問　ボタン　**********/
+.container8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+
+.question1 {
+    background-color: #0bdd;
+    /* ボタンの背景色 */
+    color: black;
+    /* ボタンのテキスト色 */
+    border: solid 3px black;
+    /* ボーダーをなしにする */
+    padding: 10px 20px;
+    /* パディング */
+    border-radius: 10px;
+    /* 角丸 */
+    cursor: pointer;
+    /* カーソルをポインターにする */
+    width: 430px;
+    font-size: 30px;
+}
+.question1:hover {
+    background-color: #0056b3;
+    /* ホバー時の背景色 */
+
+}
